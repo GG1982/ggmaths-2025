@@ -1,12 +1,11 @@
 ---
 ---
 
-
-@use "global" as *;
-@use "home" as *;
-@use "subpage" as *;
-@use "about" as *;
-@use "faq" as *;
-@use "pricing" as *;
-@use "tutors" as *;
-@use "success-stories" as *;
+@import "global";
+@import "home";
+@import "subpage";
+@import "about";
+@import "faq";
+@import "pricing";
+@import "tutors";
+@import "success-stories";
