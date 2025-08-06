@@ -1,0 +1,21 @@
+---
+layout: default
+title: Maths Tips & Resources
+---
+<div class="container">
+    <header class="page-header" style="text-align: center; padding: 40px 0;">
+        <h1>GG Maths Blog</h1>
+        <p class="hero-subheadline">Tips, strategies, and resources for students and parents.</p>
+    </header>
+
+    <div class="post-list">
+        {% for post in site.posts %}
+            <div class="post-preview" style="border-bottom: 1px solid #eee; padding: 30px 0;">
+                <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+                <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+                <p>{{ post.excerpt }}</p>
+                <a href="{{ post.url | relative_url }}" class="btn-secondary btn">Read More</a>
+            </div>
+        {% endfor %}
+    </div>
+</div>

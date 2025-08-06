@@ -1,0 +1,41 @@
+<!-- _includes/contact.html -->
+<section id="contact-section">
+    <div class="container">
+        <header class="page-header">
+            <h1>Get in Touch</h1>
+            <p class="hero-subheadline">Have a question? Ready to get started? <br>Book your free lesson or send me a message below.</p>
+        </header>
+
+        <!-- The form code provided by the user -->
+        <form class="form-container" action="https://formsubmit.co/81203bb59e62438040298023a63f8340" method="POST">
+            <!-- Thank you page -->
+            <input type="hidden" name="_next" value="{{ site.url }}/thanks.html">
+            <!-- Subject line -->
+            <input type="hidden" name="_subject" value="Inquiry - Maths Tutoring - Giuliano">
+            <!-- Avoid spam by fooling scrapers -->
+            <input type="text" name="_honey" style="display:none">
+            <!-- Autoresponse to users with copy of submission -->
+            <input type="hidden" name="_autoresponse" value="Your submission has been received, and I will contact you as soon as possible. Thank you, Giuliano.">
+            
+            <div class="form-item form-name">
+                <input name="Name" id="name" type="text" class="form-input" placeholder="Your Name" aria-label="Your name" required>
+            </div>
+            <div class="form-item form-email">
+                <input name="Email" id="email" type="email" class="form-input" placeholder="Your Email" aria-label="Your email" required>
+            </div>
+            <div class="form-item form-message">
+                <textarea name="Message" class="form-input" rows="4" placeholder="Message (e.g., 'Hi, I'd like to book a free lesson for my son in Year 10.')" aria-label="Your Message" required></textarea>
+            </div>
+            <div class="form-btn-container">
+                <button class="form-btn" type="submit">Send Message</button>
+            </div>
+        </form>
+
+        <div class="whatsapp-container">
+            <p>Prefer a quick chat? Message me directly on WhatsApp.</p>
+            <a href="https://wa.me/447956519802?text=Hi%20Giuliano!" class="btn whatsapp-btn" target="_blank" rel="noopener noreferrer">
+                Chat on WhatsApp
+            </a>
+        </div>
+    </div>
+</section>

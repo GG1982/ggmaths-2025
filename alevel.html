@@ -1,0 +1,195 @@
+---
+layout: default
+title: A-Level Maths Tutoring
+css: subpage.css
+description: "Expert A-Level maths tutoring for students aiming for top grades (A/A*) and entry into competitive university courses."
+---
+
+<section class="subpage-hero">
+    <div class="container">
+        <h1>Expert A-Level Maths Tutoring for Top Results</h1>
+        <p class="hero-subheadline">Book your <strong style="color: var(--gold);">free first lesson</strong> and go beyond the textbook. We help students master challenging topics, perfect exam technique, and prepare for top STEM university courses.</p>
+        <a href="#contact-section" class="btn btn-primary">Book a Free Consultation</a>
+    </div>
+</section>
+
+<section style="background-color: var(--light-grey);">
+    <div class="container">
+        <h2>Feeling the A-Level Jump? We Bridge the Gap.</h2>
+        <div class="two-col-layout">
+            <div class="col col-pain">
+                <h3>Common Struggles</h3>
+                <ul>
+                    <li>Finding topics like calculus, mechanics, and algebra challenging.</li>
+                    <li>Losing marks on complex, multi-step problems and proofs.</li>
+                    <li>Not on track to meet competitive university offers.</li>
+                    <li>Feeling overwhelmed by STEP, MAT, or TMUA entrance exams.</li>
+                </ul>
+            </div>
+            <div class="col col-solution">
+                <h3>Our Solutions</h3>
+                <ul>
+                    <li>Deep-dive sessions to master difficult modules with clear explanations.</li>
+                    <li>Advanced problem-solving strategies, exam techniques, and shortcuts.</li>
+                    <li>Dedicated STEP, MAT, and TMUA preparation for Oxbridge and top STEM courses.</li>
+                    <li>Personalised study plans and ongoing progress reviews.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="system">
+    <div class="container">
+        <h2>What You Will Gain</h2>
+        <div class="system-grid">
+            <div class="system-item">
+                <i class="fa-solid fa-award"></i>
+                <div class="content">
+                    <h3>Achieve Top Grades</h3>
+                    <p>Develop the depth of understanding needed to secure an A or A* within 6–12 months.</p>
+                </div>
+            </div>
+            <div class="system-item">
+                <i class="fa-solid fa-building-columns"></i>
+                <div class="content">
+                    <h3>University Readiness</h3>
+                    <p>Build a strong foundation for success in demanding STEM degrees and competitive university applications.</p>
+                </div>
+            </div>
+            <div class="system-item">
+                <i class="fa-solid fa-chart-line"></i>
+                <div class="content">
+                    <h3>Exam Mastery</h3>
+                    <p>Perfect your timing, accuracy, and technique for the hardest questions on your exams with focused practice.</p>
+                </div>
+            </div>
+            <div class="system-item">
+                <i class="fa-solid fa-brain"></i>
+                <div class="content">
+                    <h3>Confidence & Focus</h3>
+                    <p>Feel fully prepared, calm, and in control on exam day, ready to perform at your best.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="results" style="background-color: var(--light-grey);">
+    <div class="container">
+        <h2>A-Level Results That Speak for Themselves</h2>
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="stat-number">A & A*</div>
+                <div class="stat-label">Most common grades achieved</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">2–3 Grades</div>
+                <div class="stat-label">Typical improvement in under a year</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">40+</div>
+                <div class="stat-label">5-star reviews from students & parents</div>
+            </div>
+        </div>
+        <div class="cards-container">
+            {% assign a_level_reviews = site.data.reviews | where_exp: "item", "item.level contains 'A-Level'" %}
+            {% for review in a_level_reviews limit:3 %}
+                <div class="testimonial-card">
+                    <p class="quote">"{{ review.testimonial }}"</p>
+                    <p class="author">— {{ review.name }}, {{ review.level }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section id="resources">
+    <div class="container resources-section">
+        <div class="content">
+            <h2>Why A-Level Maths Tutoring Pays Off</h2>
+            <ul>
+                <li><i class="fa-solid fa-briefcase"></i>Unlock access to competitive STEM degrees like Engineering, Computer Science, and Medicine.</li>
+                <li><i class="fa-solid fa-circle-up"></i>Boost your UCAS application with strong grades and entrance exam preparation.</li>
+                <li><i class="fa-solid fa-bullseye"></i>Develop advanced analytical skills that top universities and employers look for.</li>
+                <li><i class="fa-solid fa-chalkboard-user"></i>Exclusive access to STEP/MAT past papers, video walkthroughs, and personalised learning plans.</li>
+            </ul>
+        </div>
+        <div class="placeholder"><i class="fa-solid fa-graduation-cap"></i></div>
+    </div>
+</section>
+
+<section id="faq" style="background-color: var(--light-grey);">
+    <div class="container">
+        <h2>Your A-Level Tutoring Questions Answered</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <p class="faq-question">Do you also tutor Further Maths?</p>
+                <p class="faq-answer">Yes, I provide expert tutoring for the A-Level Further Maths syllabus, covering all core and optional modules.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question">Can you help with university entrance exams like STEP or MAT?</p>
+                <p class="faq-answer">Absolutely. A key part of my service for aspiring Oxbridge or Imperial students is dedicated preparation for these advanced entrance exams.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials">
+    <div class="container">
+        <h2>More Success Stories</h2>
+        <div class="cards-container">
+            {% assign reversed_reviews = site.data.reviews | reverse %}
+            {% assign a_level_reviews = reversed_reviews | where_exp: "item", "item.level contains 'A-Level'" %}
+            {% for review in a_level_reviews limit: 3 %}
+                <div class="testimonial-card">
+                    <p class="quote">"{{ review.testimonial }}"</p>
+                    <p class="author">— {{ review.name }}, {{ review.level }}</p>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="button-container-centered">
+            <a href="{{ '/success-stories.html' | relative_url }}" class="btn btn-secondary btn-large">See Video Interviews</a>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="blog-preview" style="background-color: var(--light-grey);">
+    <div class="container">
+        <h2>A-Level Maths Insights & Resources</h2>
+        <div class="cards-container">
+            <div class="blog-card">
+                <div class="blog-content">
+                    <h3>An Introduction to STEP Papers for University</h3>
+                    <p>Thinking of applying to Cambridge or Warwick? Here's what you need to know about the notoriously difficult STEP entrance exam...</p>
+                    <a href="#">Read More &rarr;</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="blog-content">
+                    <h3>Mastering Integration by Parts: A Complete Guide</h3>
+                    <p>This is a topic many students fear. Our guide provides a fool-proof method and walks through several tricky examples...</p>
+                    <a href="#">Read More &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="mini-bio">
+    <div class="container">
+        <div class="mini-bio-photo placeholder"></div>
+        <div class="mini-bio-content">
+            <h3>Your A-Level Specialist</h3>
+            <p>With a proven track record of helping students secure A/A* grades and places at Russell Group universities, I provide the depth and strategic insight needed to excel in A-Level Maths and beyond.</p>
+        </div>
+    </div>
+</section>
+
+{% include cta-final.html 
+   headline="Ready to Achieve Your Full Potential?" 
+   subheadline="Book your free consultation and first lesson today to secure the grades you need for your first-choice university. Get expert, personalised A-Level support." 
+   button_text="Book a Free Consultation" 
+%}

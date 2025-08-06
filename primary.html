@@ -1,0 +1,168 @@
+---
+layout: default
+title: Primary Maths Tutoring
+css: subpage.css
+description: "Helping primary students (ages 7-11) build confidence and a strong foundation in maths with fun, engaging 1:1 lessons."
+---
+
+<section class="subpage-hero">
+    <div class="container">
+        <h1>Helping Primary Students Build Confidence in Maths</h1>
+        <p class="hero-subheadline">Book your <strong style="color: var(--gold);">free first lesson </strong>and see how we can make maths fun and stress-free, helping your child build a strong, positive foundation that lasts a lifetime.</p>
+        <a href="#contact-section" class="btn btn-primary">Book a Free Consultation</a>
+    </div>
+</section>
+
+<section style="background-color: var(--light-grey);">
+    <div class="container">
+        <h2>Is Your Child Struggling? We Can Help.</h2>
+        <div class="two-col-layout">
+            <div class="col col-pain">
+                <h3>Common Struggles</h3>
+                <ul>
+                    <li>Finds maths lessons boring or frustrating.</li>
+                    <li>Lacks confidence and is afraid to ask questions.</li>
+                    <li>Has fallen behind on core skills like times tables.</li>
+                </ul>
+            </div>
+            <div class="col col-solution">
+                <h3>Our Solutions</h3>
+                <ul>
+                    <li>Fun, game-based learning to keep them engaged.</li>
+                    <li>Patient, 1:1 support in a judgment-free space.</li>
+                    <li>Focus on mastering fundamentals, step-by-step.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="system">
+    <div class="container">
+        <h2>What Your Child Will Gain</h2>
+        <div class="system-grid">
+            <div class="system-item">
+                <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="content">
+                    <h3>A Strong Foundation</h3>
+                    <p>Master core concepts required for Year 6 SATs and the smooth transition to secondary school.</p>
+                </div>
+            </div>
+            <div class="system-item">
+                <div class="icon"><i class="fa-solid fa-face-smile"></i></div>
+                <div class="content">
+                    <h3>Increased Confidence</h3>
+                    <p>Feel proud of their progress and unafraid to tackle new challenges.</p>
+                </div>
+            </div>
+            <div class="system-item">
+                <div class="icon"><i class="fa-solid fa-dice-six"></i></div>
+                <div class="content">
+                    <h3>A Love for Learning</h3>
+                    <p>Discover that maths can be fun and rewarding, not a source of stress.</p>
+                </div>
+            </div>
+            <div class="system-item">
+                <div class="icon"><i class="fa-solid fa-compass"></i></div>
+                <div class="content">
+                    <h3>Access to Our Proven Learning System</h3>
+                    <p>Get started with our online learning portal and structured resources to support their progress.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="resources" style="background-color: var(--light-grey);">
+    <div class="container resources-section">
+        <div class="content">
+            <h2>Learning That Feels Like Play</h2>
+            <ul>
+                <li><i class="fa-solid fa-gamepad"></i>Interactive games and activities that make core concepts stick.</li>
+                <li><i class="fa-solid fa-chart-line"></i>A step-by-step mastery approach using the GG Maths system.</li>
+                <li><i class="fa-solid fa-hand-holding-heart"></i>Positive reinforcement and praise to build a 'can-do' attitude towards maths.</li>
+            </ul>
+        </div>
+        <div class="placeholder"><i class="fa-solid fa-puzzle-piece"></i></div>
+    </div>
+</section>
+
+<section id="results" style="background-color: var(--light-grey);">
+    <div class="container">
+        <h2>Happy Parents, Confident Kids</h2>
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Parents see improved confidence</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">7–11</div>
+                <div class="stat-label">Ages we specialise in</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">10+</div>
+                <div class="stat-label">Years of tutoring experience</div>
+            </div>
+        </div>
+        <div class="cards-container">
+            {% assign primary_reviews = site.data.reviews | where_exp: "item", "item.level contains 'Primary'" %}
+            {% for review in primary_reviews limit:2 %}
+                <div class="testimonial-card">
+                    <p class="quote">"{{ review.testimonial }}"</p>
+                    <p class="author">— {{ review.name }}, Parent</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section id="mini-bio" style="background-color: var(--light-grey);">
+    <div class="container">
+        <div class="mini-bio-photo placeholder"><i class="fa-solid fa-person-chalkboard"></i></div>
+        <div class="mini-bio-content">
+            <h3>Your Primary Maths Specialist</h3>
+            <p>I'm Giuliano, and I believe that a positive early experience with maths can shape a child's entire academic journey. With over 10 years of experience and more than 200 students taught, my patient, fun, and encouraging approach — along with my team of highly trained tutors — helps build strong foundations and a lifelong love for learning.</p>
+        </div>
+    </div>
+</section>
+
+<section id="faq">
+    <div class="container">
+        <h2>Your Questions About Primary Tutoring</h2>
+        <div class="faq-list">
+            <div class="faq-item"><p class="faq-question">How do you keep younger children engaged online?</p><p class="faq-answer">We use highly interactive tools, digital whiteboards, and fun, fast-paced activities. Lessons are dynamic and designed to feel more like a game than a class.</p></div>
+            <div class="faq-item"><p class="faq-question">Can you help with Year 6 SATs preparation?</p><p class="faq-answer">Yes, preparing students for SATs is a core part of our primary tutoring. We build foundational knowledge and confidence so they can perform their best without stress.</p></div>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials">
+    <div class="container">
+        <h2>More Success Stories</h2>
+        <div class="cards-container">
+            <div class="testimonial-card">
+                <p class="quote">"I’ve always struggled with maths, but Giuliano helped me understand it and boosted my confidence to achieve a Level 7 (A)."</p>
+                <p class="author">— Orli A., GCSE Student</p>
+            </div>
+            <div class="testimonial-card">
+                <p class="quote">"Giuliano has tutored me and my sister for years — I achieved a Grade 9 at GCSE and am now excelling at A-Level."</p>
+                <p class="author">— Avi A., Student</p>
+            </div>
+        </div>
+        <div class="button-container-centered">
+            <a href="{{ '/success-stories.html' | relative_url }}" class="btn btn-secondary btn-large">See Video Interviews</a>
+        </div>
+    </div>
+</section>
+
+<section id="blog-preview" style="background-color: var(--light-grey);">
+    <div class="container">
+        <h2>Maths Tips & Resources for Parents</h2>
+        <div class="cards-container">
+            <div class="blog-card"><div class="blog-content"><h3>5 Fun Games to Teach Times Tables</h3><p>Discover five engaging games you can play at home to help your child master multiplication without the tears...</p><a href="#">Read More &rarr;</a></div></div>
+            <div class="blog-card"><div class="blog-content"><h3>Building 'Number Sense' at Home</h3><p>What is number sense and why is it so important? Learn simple, everyday activities that boost your child's mathematical intuition...</p><a href="#">Read More &rarr;</a></div></div>
+        </div>
+    </div>
+</section>
+
+{% include cta-final.html headline="Your First Lesson is Completely Free." subheadline="Book your free consultation today, and let’s discuss how we can help your child succeed with a tailored plan." button_text="Book a Free Consultation" %}

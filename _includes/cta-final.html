@@ -1,0 +1,9 @@
+<section id="final-cta">
+    <div class="container">
+        <h2>{{ include.headline | default: "Ready to See Real Results in Maths?" }}</h2>
+        <p>{{ include.subheadline | default: "Get the expert support you need to build confidence and achieve your goals." }}</p>
+        <a href="{{ page.url }}#contact-section" class="btn btn-primary">{{ include.button_text | default: "Book a Free Lesson" }}</a>
+    </div>
+</section>
+
+{% include contact.html %}

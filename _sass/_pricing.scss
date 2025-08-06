@@ -1,0 +1,192 @@
+/* assets/css/pricing.css */
+
+/* Page Header & Pricing Summary */
+#pricing-hero {
+    text-align: center;
+    padding: 80px 0 60px 0;
+}
+#pricing-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.pricing-summary {
+    max-width: 600px;
+    margin: 3rem auto 0 auto;
+    padding: 2rem;
+    background-color: var(--light-grey);
+    border-radius: 8px;
+}
+.price-large {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--navy);
+}
+.price-note {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+.price-free-lesson {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #fcf6e4; /* A light, creamy gold */
+    border: 1px solid #fce8bf; /* A slightly darker gold border */
+    border-radius: 5px;
+    font-size: 1rem;
+    color: var(--navy);
+}
+
+.price-free-lesson strong {
+    color: #4b3832;
+    font-weight: 700;
+}
+
+.price-reassurance {
+    margin-top: 1rem;
+    font-style: italic;
+    font-size: 0.95rem;
+    color: var(--navy);
+}
+
+/* Value Section */
+#value-included h2 {
+    text-align: center;
+}
+.intro-text {
+    max-width: 700px;
+    margin: 0 auto 3rem auto;
+    text-align: center;
+    color: var(--text-light);
+}
+.value-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+.value-item {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.value-item h3 {
+    margin-bottom: 0.5rem;
+}
+.value-item p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+}
+
+/* New CSS for icons in the value section */
+.value-item .icon-placeholder {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto 15px auto;
+    background-color: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.value-item .icon-placeholder i {
+    font-size: 2rem;
+    color: var(--navy);
+}
+
+/* Pricing vs Value Comparison */
+/* #value-comparison {
+    padding: 60px 0;
+}
+.comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: stretch;
+}
+.comparison-card {
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+.basic-card {
+    background-color: #f5f5f5;
+    border: 2px dashed #ccc;
+}
+.basic-card h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.value-card {
+    background-color: var(--navy);
+    color: #fff;
+    border: 2px solid var(--navy);
+}
+.value-card h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+.value-card ul li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    list-style: none;
+    text-align: left;
+}
+.value-card ul li::before {
+    content: '✓';
+    color: var(--gold);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-right: 1rem;
+} */
+
+/* Package Options */
+#packages h2 {
+    text-align: center;
+}
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+.package-card {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding: 2rem;
+    border-radius: 8px;
+}
+.package-card h3 {
+    margin-bottom: 0.5rem;
+}
+.package-price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--gold);
+    line-height: 1;
+}
+.price-unit {
+    font-size: 1rem;
+    color: var(--text-light);
+}
+.package-features {
+    list-style: none;
+    margin: 1.5rem 0;
+    padding: 0;
+}
+.package-features li {
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+}
+.package-card .btn {
+    width: 100%;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .comparison-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,9 @@
+# _config.yml
+
+title: GG Maths
+description: "Expert Online Maths Tutoring for Ages 7–18. Helping students master maths step-by-step with tailored 1:1 support."
+baseurl: "/ggmaths-2025" # Set to "/repository-name" if hosted on GitHub Pages in a repo
+url: "https://GG1982.github.io"
+
+# Build settings
+markdown: kramdown
