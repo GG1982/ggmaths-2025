@@ -1,9 +1,20 @@
-# _config.yml
+title: "GG Maths"
+description: "Expert online maths tutoring for ages 7–18. Boost confidence and exam results with tailored 1:1 support and proven strategies."
+url: "https://gg1982.github.io"
+baseurl: "/ggmaths-2025" # Only needed if you're using a subfolder
 
-title: GG Maths
-description: "Expert Online Maths Tutoring for Ages 7–18. Helping students master maths step-by-step with tailored 1:1 support."
-baseurl: "/ggmaths-2025" # Set to "/repository-name" if hosted on GitHub Pages in a repo
-url: "https://GG1982.github.io"
+author:
+  name: "Giuliano"
+  email: "info@ggmaths.co.uk"
 
-# Build settings
-markdown: kramdown
+lang: "en-GB"
+
+social:
+  name: "GG Maths"
+  links:
+    - https://www.youtube.com/@ggmaths
+    - https://www.instagram.com/ggmaths
+
+logo: "/assets/images/logo.png"
+image: "/assets/images/social-share-preview.jpg"
+
