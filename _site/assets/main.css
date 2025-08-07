@@ -732,6 +732,96 @@ a {
   color: var(--text-light);
 }
 
+/* New: Online Learning Video Section */
+#online-learning-video {
+  padding: 80px 0;
+  text-align: center;
+  background-color: var(--light-grey);
+}
+
+#online-learning-video h2 {
+  margin-bottom: 0.5rem;
+}
+
+#online-learning-video p {
+  color: var(--text-light);
+  margin-bottom: 3rem;
+}
+
+.video-responsive {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 56.25%; /* This creates a 16:9 aspect ratio */
+  background-color: var(--dark-grey);
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #online-learning-video {
+    padding: 60px 0;
+  }
+}
+/* Credibility Section - Updated Styling */
+#credibility {
+  background-color: var(--light-grey);
+  padding: 40px 0;
+}
+
+#credibility .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.credibility-item {
+  text-align: center;
+  padding: 10px 0;
+  flex-basis: 250px;
+  display: flex; /* New: Use Flexbox to stack content */
+  flex-direction: column;
+  align-items: center;
+}
+
+.credibility-number {
+  font-size: 2.25rem; /* New: Bigger font size */
+  font-weight: 700; /* New: Bolder font weight */
+  color: var(--gold); /* New: Gold color */
+  line-height: 1.1;
+  margin-bottom: 5px;
+}
+
+.credibility-label {
+  font-weight: 600;
+  color: var(--text-light);
+  font-size: 1.1rem;
+}
+
+/* Responsive adjustment for a better look on smaller screens */
+@media (max-width: 768px) {
+  #credibility .container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .credibility-item {
+    flex-basis: 0;
+  }
+}
 /* Who We Help Section */
 #who-we-help {
   padding: 80px 0;
