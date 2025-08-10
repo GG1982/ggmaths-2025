@@ -185,57 +185,6 @@ a { text-decoration: none; color: var(--gold); font-weight: 600; }
   color: var(--gold);
 }
 
-/* =========================
-   Mobile Styles
-========================= */
-
-@media (max-width: 768px) {
-  .nav-toggle {
-    display: block;
-  }
-
-  .main-nav .nav-list {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: #fff;
-    padding: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    z-index: 999;
-  }
-
-  .main-nav .nav-list.open {
-    display: flex;
-  }
-
-  .main-nav .dropdown {
-    width: 100%;
-    position: static;
-  }
-
-  .main-nav .dropdown-menu {
-    display: none;
-    position: static;
-    padding-left: 15px;
-    background: transparent;
-    box-shadow: none;
-  }
-
-  .main-nav .dropdown.open .dropdown-menu {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .main-nav .dropdown-menu a {
-    color: var(--navy);
-    padding: 10px 20px;
-  }
-}
 
 
 /* Short About Section (Include) */
