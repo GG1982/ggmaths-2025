@@ -111,6 +111,10 @@ a {
   border-radius: 10px;
 }
 
+.container .btn {
+  margin-top: 1rem;
+}
+
 /* Header & Footer */
 .main-footer {
   background-color: var(--dark-grey);
@@ -492,11 +496,8 @@ a {
   text-align: center;
 }
 
-#contact-page {
-  scroll-margin-top: 20px; /* Adjust to your header height */
-}
-
 #contact-section {
+  scroll-margin-top: 50px; /* Adjust to your header height */
   background-color: var(--light-grey);
 }
 
@@ -2030,127 +2031,106 @@ a {
   }
 }
 /* /assets/css/success-stories.css */
-/* Hero Section */
-#success-hero {
+/* Page Hero */
+#stories-hero {
   text-align: center;
-  background-color: var(--light-grey);
-  padding: 100px 0;
+  padding: 80px 0 60px;
 }
 
-#success-hero .container {
-  max-width: 800px;
-}
-
-#success-hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-#success-hero .hero-subheadline {
-  margin-bottom: 2rem;
-}
-
-/* Video Testimonials Section */
-#video-testimonials h2 {
-  margin-bottom: 3rem;
-}
-
-.video-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
-
-.video-item {
-  text-align: center;
-}
-
-.video-placeholder {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
-  background-color: var(--dark-grey);
-  border-radius: 8px;
-  cursor: pointer;
-  overflow: hidden;
-  background-image: url("https://i.imgur.com/your-video-thumbnail.jpg"); /* Placeholder image */
-  background-size: cover;
-  background-position: center;
-}
-
-.play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3rem;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
-  border-radius: 50%;
-  text-align: center;
-  transition: transform 0.2s ease, background-color 0.2s ease;
-}
-
-.video-placeholder:hover .play-button {
-  transform: translate(-50%, -50%) scale(1.1);
-  background-color: rgba(255, 183, 3, 0.9);
-}
-
-.video-caption {
-  font-style: italic;
+.hero-subheadline {
   color: var(--text-light);
-  margin-top: 1rem;
+  max-width: 80ch;
+  margin: 0 auto;
 }
 
-/* Review Highlights Section */
-.review-group {
-  margin-bottom: 3rem;
-}
-
-.review-group h3 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  color: var(--gold);
-}
-
-/* Stats Bar */
-#stats-bar {
-  background-color: var(--light-grey);
+/* Success Stories Sections */
+#success-stories {
   padding: 60px 0;
 }
 
-.stats-bar {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  gap: 1rem;
-  flex-wrap: wrap;
+#success-stories .container {
+  max-width: 1100px;
 }
 
-.stat-item {
-  flex: 1;
-  min-width: 150px;
+/* Base: two columns + named areas */
+.story-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "media content"; /* default order */
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 6rem;
 }
 
-.stat-item .stat-number {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--gold);
-  line-height: 1.1;
+/* Always assign areas to children */
+.story-media {
+  grid-area: media;
+  min-width: 0;
 }
 
-.stat-item .stat-label {
+.story-content {
+  grid-area: content;
+  min-width: 0;
+}
+
+/* Alternate order on larger screens */
+.story-card.reverse {
+  grid-template-areas: "content media";
+}
+
+/* Typography and Content */
+.story-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem; /* Spacing between grid items */
+}
+
+.pullquote {
+  border-left: 3px solid var(--navy);
+  padding-left: 1rem;
+  font-style: italic;
   color: var(--text-light);
-  font-weight: 600;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .stats-bar {
-    flex-direction: column;
+.story-content h3 {
+  font-size: 1.5rem;
+  color: var(--navy);
+  margin-top: 0;
+}
+
+.story-content p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* Video Container */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  background-color: var(--dark-grey);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Responsive Overrides */
+@media (max-width: 992px) {
+  .story-card,
+  .story-card.reverse {
+    grid-template-columns: 1fr;
+    /* Stack areas vertically on mobile (same for both) */
+    grid-template-areas: "media" "content";
+    gap: 2rem;
+    margin-bottom: 3rem;
   }
 }
 

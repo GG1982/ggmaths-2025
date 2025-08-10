@@ -1,0 +1,71 @@
+[
+  {
+    "id": "kiran-gcse-alevel",
+    "student_name": "Kiran",
+    "title": "Kiran — GCSE & A-Level Achievement",
+    "tags": ["GCSE", "A-Level"],
+    "video": {
+      "url": "https://www.youtube.com/embed/YB_D8rCUBCE",
+      "title": "Kiran’s Maths Journey"
+    },
+    "pullquote": "I was aiming for a 6 or 7. Getting a 9 was a huge surprise and a great achievement.",
+    "summary": "Kiran joined GG Maths in Year 10, predicted a Grade 6 in GCSE Maths. With tailored lessons and step-by-step guidance, he turned weaknesses into strengths, achieving a top 2% Grade 9 at GCSE. Carrying this mindset into A-Level, we fast-tracked Year 12 content, giving him extra time for Year 13’s toughest topics. The result: an A in A-Level Maths and a place at university to study Mathematics and Music.",
+    "outcomes": {
+      "gcse_predicted": "6",
+      "gcse_achieved": "9",
+      "alevel_achieved": "A"
+    },
+    "entry_stage": "Year 10"
+  },
+  {
+    "id": "ben-gcse",
+    "student_name": "Ben",
+    "title": "Ben — GCSE Turnaround",
+    "tags": ["GCSE"],
+    "video": {
+      "url": "https://www.youtube.com/embed/abcd1234",
+      "title": "Ben’s Maths Success Story"
+    },
+    "pullquote": "I never thought I’d enjoy maths, but now it’s one of my strongest subjects.",
+    "summary": "Ben started Year 11 with a predicted Grade 3 in GCSE Maths. Through focused work on algebra, exam techniques, and weekly practice, his confidence grew rapidly. By exam time, he was tackling past papers with ease and achieved a Grade 7 — a jump of four grades.",
+    "outcomes": {
+      "gcse_predicted": "3",
+      "gcse_achieved": "7"
+    },
+    "entry_stage": "Year 11"
+  },
+  {
+    "id": "emily-alevel",
+    "student_name": "Emily",
+    "title": "Emily — From B to A* at A-Level",
+    "tags": ["A-Level"],
+    "video": {
+      "url": "https://www.youtube.com/embed/efgh5678",
+      "title": "Emily’s A-Level Maths Journey"
+    },
+    "pullquote": "The step from GCSE to A-Level was huge, but I felt supported every step of the way.",
+    "summary": "Emily was aiming for a B in A-Level Maths but wanted an A* to secure a place at her dream university. We focused on advanced problem-solving, calculus, and proof techniques, building depth of understanding. She achieved her A* and gained a place at Cambridge.",
+    "outcomes": {
+      "alevel_predicted": "B",
+      "alevel_achieved": "A*"
+    },
+    "entry_stage": "Year 12"
+  },
+  {
+    "id": "matthew-gcse",
+    "student_name": "Matthew",
+    "title": "Matthew — Confidence and Results",
+    "tags": ["GCSE"],
+    "video": {
+      "url": "https://www.youtube.com/embed/ijkl9012",
+      "title": "Matthew’s Maths Confidence Story"
+    },
+    "pullquote": "I used to think I wasn’t a ‘maths person’ — now I know I can do it.",
+    "summary": "Matthew entered Year 10 struggling with maths and self-belief, predicted a Grade 4. By starting with strong foundations and building up to more complex topics, his confidence soared. He achieved a Grade 8 in GCSE Maths and now feels ready for any challenge.",
+    "outcomes": {
+      "gcse_predicted": "4",
+      "gcse_achieved": "8"
+    },
+    "entry_stage": "Year 10"
+  }
+]

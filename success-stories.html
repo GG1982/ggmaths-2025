@@ -5,89 +5,35 @@ css: success-stories.css
 description: "See real results from GG Maths students — watch video testimonials and read reviews from parents and students across Primary, GCSE, and A-Level."
 ---
 
-<section id="success-hero" class="subpage-hero">
+<section id="stories-hero">
     <div class="container">
-        <h1>Real Results from Real Students</h1>
-        <p class="hero-subheadline">See how GG Maths has helped students jump grades, boost confidence, and achieve their goals — in their own words.</p>
-        <a href="#contact-section" class="btn btn-primary btn-large">Book a Free Consultation</a>
+        <h1>Real Student Success, In Their Own Words</h1>
+        <p class="hero-subheadline">These are genuine stories from students and parents who trusted GG Maths. Each journey celebrates hard work, newfound confidence, and the fantastic results that followed.</p>
+        <a href="#contact-section" class="btn btn-primary">Book a Free Consultation</a>
     </div>
 </section>
 
-<section id="video-testimonials" style="background-color: var(--light-grey);">
+<section id="success-stories">
     <div class="container">
-        <h2>Hear Directly from Our Students</h2>
-        <div class="video-grid">
-            <div class="video-item">
-                <div class="video-placeholder">
-                    <div class="play-button">▶</div>
-                </div>
-                <p class="video-caption">"Giuliano made maths click for me!"<br><strong>— Ben H., GCSE</strong></p>
-            </div>
-            <div class="video-item">
-                <div class="video-placeholder">
-                    <div class="play-button">▶</div>
-                </div>
-                <p class="video-caption">"I finally understood algebra — and got my A!"<br><strong>— Akbar, A-Level</strong></p>
-            </div>
-            <div class="video-item">
-                <div class="video-placeholder">
-                    <div class="play-button">▶</div>
-                </div>
-                <p class="video-caption">"My son loves his lessons and is now so confident!"<br><strong>— Parent, Primary</strong></p>
-            </div>
-        </div>
-    </div>
-</section>
 
-<section id="review-highlights">
-    <div class="container">
-        <h2>Written Feedback from Parents & Students</h2>
-
-        <div class="review-group">
-            <h3>Primary School</h3>
-            <div class="cards-container">
-                {% assign primary_reviews = site.data.reviews | where_exp: "item", "item.level contains 'Primary'" %}
-                {% for review in primary_reviews %}
-                    <div class="testimonial-card">
-                        <p class="quote">"{{ review.testimonial }}"</p>
-                        <p class="author">— {{ review.name }}, Parent</p>
-                    </div>
-                {% endfor %}
+        {% for story in site.data.success_stories %}
+            {% assign odd = forloop.index0 | modulo: 2 %}
+            <article class="story-card{% if odd == 1 %} reverse{% endif %}">
+            <div class="story-media">
+                <div class="video-container">
+                    <iframe src="{{ story.video.url }}" title="{{ story.video.title }}" loading="lazy" allowfullscreen></iframe>
+                </div>
             </div>
-        </div>
-        
-        <div class="review-group">
-            <h3>GCSE</h3>
-            <div class="cards-container">
-            {% assign reversed_reviews = site.data.reviews | reverse %}
-            {% assign gcse_reviews = reversed_reviews | where_exp: "item", "item.level contains 'GCSE'" %}
-            {% for review in gcse_reviews | offset:2 limit:2 %}
-                    <div class="testimonial-card">
-                        <p class="quote">"{{ review.testimonial }}"</p>
-                        <p class="author">— {{ review.name }}, {{ review.level }}</p>
-                    </div>
-                {% endfor %}
+            <div class="story-content">
+                <h3>{{ story.title }}</h3>
+                <p class="pullquote">“{{ story.pullquote }}”</p>
+                <p>{{ story.summary }}</p>
             </div>
-        </div>
-
-        <div class="review-group">
-            <h3>A-Level</h3>
-            <div class="cards-container">
-                {% assign reversed_reviews = site.data.reviews | reverse %}
-                {% assign alevel_reviews = reversed_reviews | where_exp: "item", "item.level contains 'A-Level'" %}
-                {% for review in alevel_reviews | offset:2 limit:2 %}
-                    <div class="testimonial-card">
-                        <p class="quote">"{{ review.testimonial }}"</p>
-                        <p class="author">— {{ review.name }}, {{ review.level }}</p>
-                    </div>
-                {% endfor %}
-            </div>
-        </div>
+            </article>
+        {% endfor %}
 
     </div>
 </section>
-
-{% include credibility-banner.html %}
 
 {% include cta-final.html 
    headline="Ready to Start Your Success Story?" 
