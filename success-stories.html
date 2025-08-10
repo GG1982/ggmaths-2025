@@ -28,6 +28,11 @@ description: "See real results from GG Maths students — watch video testimonia
                 <h3>{{ story.title }}</h3>
                 <p class="pullquote">“{{ story.pullquote }}”</p>
                 <p>{{ story.summary }}</p>
+                <div class="story-tags">
+                    {% for tag in story.tags %}
+                        <span class="tag">{{ tag }}</span>
+                    {% endfor %}
+                </div>
             </div>
             </article>
         {% endfor %}
