@@ -18,3 +18,10 @@ social:
 logo: "/assets/images/logo.png"
 image: "/assets/images/social-share-preview.jpg"
 
+# Pagination Settings
+paginate: 6              # Number of posts to show per page
+paginate_path: "/blog/page:num/" # URL structure for paginated pages
+
+plugins:
+  - jekyll-paginate
+

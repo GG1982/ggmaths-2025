@@ -1,21 +1,65 @@
 ---
 layout: default
-title: Maths Tips & Resources
+title: "Maths Tips & Resources | GG Maths"
+css: blog.css
+description: "Practical maths revision strategies, study tips, and inspiration from the GG Maths team."
 ---
-<div class="container">
-    <header class="page-header" style="text-align: center; padding: 40px 0;">
+
+<section id="blog-hero">
+    <div class="container">
         <h1>GG Maths Blog</h1>
         <p class="hero-subheadline">Tips, strategies, and resources for students and parents.</p>
-    </header>
-
-    <div class="post-list">
-        {% for post in site.posts %}
-            <div class="post-preview" style="border-bottom: 1px solid #eee; padding: 30px 0;">
-                <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-                <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
-                <p>{{ post.excerpt }}</p>
-                <a href="{{ post.url | relative_url }}" class="btn-secondary btn">Read More</a>
-            </div>
-        {% endfor %}
     </div>
-</div>
+</section>
+
+<section id="blog-posts">
+    <div class="container">
+        <h2>Latest Articles</h2>
+        <div class="post-grid">
+            {% for post in site.posts %}
+            <article class="post-card">
+                {% if post.image %}
+                    <a href="{{ post.url | relative_url }}" class="post-thumbnail">
+                        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
+                    </a>
+                {% endif %}
+                <div class="post-content">
+                    {% if post.tags.size > 0 %}
+                        <div class="post-tags">
+                            {% for tag in post.tags %}
+                                <span class="tag">{{ tag }}</span>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                    <h3 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                    <p class="post-meta">
+                        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+                    </p>
+                    <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+                    <a href="{{ post.url | relative_url }}" class="btn btn-secondary">Read More</a>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+
+        {% if paginator.total_pages > 1 %}
+        <nav class="pagination" aria-label="Blog pagination">
+            {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path | relative_url }}" class="page-link prev">&larr; Newer Posts</a>
+            {% else %}
+                <span class="page-link disabled">&larr; Newer Posts</span>
+            {% endif %}
+
+            <span class="page-status">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+            {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path | relative_url }}" class="page-link next">Older Posts &rarr;</a>
+            {% else %}
+                <span class="page-link disabled">Older Posts &rarr;</span>
+            {% endif %}
+        </nav>
+        {% endif %}
+    </div>
+</section>
+
+{% include cta-final.html headline="Want more tips like this?" subheadline="Book your free consultation today and get tailored maths guidance." button_text="Book a Free Consultation" %}
