@@ -1,11 +1,6 @@
 @charset "UTF-8";
 /* assets/css/global.css */
 :root {
-  --primary: #1B2A41; /* Navy */
-  --secondary: #F5B841; /* Gold */
-  --accent: #F28C82; /* Coral */
-  --background: #FFF8F0; /* Cream */
-  --text: #333333; /* Charcoal */
   --white: #fff;
   --navy: #0B3954;
   --gold: #FFB703;
@@ -362,9 +357,7 @@ a {
     margin-bottom: 20px;
   }
 }
-/* =========================
-   Navigation Styles
-========================= */
+/* Navigation Styles */
 .main-header {
   background-color: var(--light-grey);
   padding: 20px 0;
