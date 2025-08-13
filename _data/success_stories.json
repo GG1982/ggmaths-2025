@@ -18,22 +18,23 @@
     "entry_stage": "Year 10"
   },
   {
-    "id": "ben-gcse",
-    "student_name": "Ben",
-    "title": "Ben — GCSE Turnaround",
-    "tags": ["GCSE"],
+    "id": "adrian-year7-to-year9",
+    "student_name": "Adrian",
+    "title": "Adrian — From Struggling in Year 7 to Confident in Year 9",
+    "tags": ["KS3", "Year 8"],
     "video": {
-      "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      "title": "Ben’s Maths Success Story"
+      "url": "https://www.youtube.com/embed/yeNtGwH-bmk",
+      "title": "Adrian’s Maths Journey"
     },
-    "pullquote": "I never thought I’d enjoy maths, but now it’s one of my strongest subjects.",
-    "summary": "Ben started Year 11 with a predicted Grade 3 in GCSE Maths. Through focused work on algebra, exam techniques, and weekly practice, his confidence grew rapidly. By exam time, he was tackling past papers with ease and achieved a Grade 7 — a jump of four grades.",
+    "pullquote": "In less than six months, he started picking it up and he started performing at above 80%.",
+    "summary": "When Adrian joined GG Maths in Year 7, his maths results were below 50%. With one-to-one tutoring, clear step-by-step lessons, and targeted homework, he rebuilt his skills and confidence. In just six months, his marks rose to 85%. Now, learning topics ahead of class gives him a clear edge — proof that the right support can turn setbacks into success.",
     "outcomes": {
-      "gcse_predicted": "3",
-      "gcse_achieved": "7"
+      "initial_score": "Below 50%",
+      "improved_score_noncalc": "49/60",
+      "improved_score_calc": "53/60"
     },
-    "entry_stage": "Year 11"
-  },
+    "entry_stage": "Year 7"
+},
   {
     "id": "emily-alevel",
     "student_name": "Emily",
