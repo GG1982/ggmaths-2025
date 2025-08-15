@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Giuliano Grasso",
+    "photo_url": "/assets/images/tutors/giuliano.jpg",
+    "qualification": "BSc Mathematics, University of East Anglia",
+    "specialism": "GCSE & A-Level Maths",
+    "bio": "Founder of GG Maths with over a decade of full-time tutoring experience. He personally trains every tutor on our team to deliver our proven, systematic approach. Giuliano specialises in helping students jump multiple grades through targeted, systematic practice."
+  },
+  {
+    "name": "Akbar Khan",
+    "photo_url": "/assets/images/tutors/akbar.jpg",
+    "qualification": "MEng Engineering, Imperial College London",
+    "specialism": "A-Level Maths & Further Maths",
+    "bio": "An expert in advanced problem-solving and exam technique, Akbar is known for breaking down complex A-Level topics into simple, understandable steps. His passion is helping ambitious students achieve their top grades and secure places at competitive universities."
+  },
+  {
+    "name": "Sophie Taylor",
+    "photo_url": "/assets/images/tutors/sophie.jpg",
+    "qualification": "PGCE Secondary Mathematics",
+    "specialism": "KS2 & GCSE Maths",
+    "bio": "Sophie brings a friendly, patient, and engaging approach to her lessons, making maths fun for younger learners. As a qualified secondary school teacher, she is skilled at building confidence and addressing foundational knowledge gaps for both KS2 and GCSE students."
+  },
+  {
+    "name": "Bruna Mot Barbosa",
+    "photo_url": "/assets/images/tutors/bruna.jpeg",
+    "qualification": "MSc Computer Science, Federal University of Goiás",
+    "specialism": "GCSE & A-Level Maths",
+    "bio": "Based in Brazil, Bruna is a patient and supportive tutor with experience teaching at high school, university, and postgraduate levels. She specialises in logic to strengthen mathematical thinking and problem-solving. Bruna’s step-by-step approach builds confidence and ensures steady progress."
+  }
+]

@@ -74,7 +74,7 @@
     text-decoration: none;
 }
 .post-title a:hover {
-    color: var(--gold);
+    color: var(--secondary);
 }
 .post-meta {
     font-size: 0.9rem;
@@ -105,7 +105,7 @@
     border: 2px solid transparent;
 }
 .page-link:hover {
-    border-color: var(--gold);
+    border-color: var(--secondary);
 }
 .page-link.disabled {
     color: var(--text-light);
