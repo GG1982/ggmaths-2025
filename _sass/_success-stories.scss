@@ -46,7 +46,7 @@
 }
 
 .pullquote {
-    border-left: 3px solid var(--navy);
+    border-left: 3px solid var(--primary);
     padding-left: 1rem;
     font-style: italic;
     color: var(--text-light);
@@ -54,7 +54,7 @@
 
 .story-content h3 {
     font-size: 1.5rem;
-    color: var(--navy);
+    color: var(--primary);
     margin-top: 0;
 }
 
@@ -67,7 +67,7 @@
 .story-tags .tag {
   display: inline-block;
   background-color: #E6E6E6;
-  color: var(--navy);
+  color: var(--primary);
   font-size: 0.8rem;
   font-weight: 600;
   padding: 0.35rem 0.75rem;

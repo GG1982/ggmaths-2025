@@ -26,7 +26,7 @@
 
 .story-container h3 {
     margin-top: 2rem;
-    color: var(--navy);
+    color: var(--primary);
 }
 
 /* --- Timeline Section --- */
@@ -101,14 +101,14 @@
     line-height: var(--timeline-icon-size);
     border-radius: 50%; /* Restored to a circle */
     background-color: var(--gold); /* Restored the background color */
-    border: 3px solid var(--navy); /* Restored the border */
+    border: 3px solid var(--primary); /* Restored the border */
     z-index: 1;
 }
 
 .timeline li strong {
     display: block;
     font-size: 1.2rem;
-    color: var(--navy);
+    color: var(--primary);
     font-weight: 700;
     margin-bottom: 5px;
 }
@@ -120,7 +120,7 @@
 }
 
 .timeline li a:hover {
-    color: var(--navy);
+    color: var(--primary);
 }
 
 /* Responsive adjustment */
@@ -263,7 +263,7 @@
 }
 
 .philosophy-item h3 {
-    color: var(--navy);
+    color: var(--primary);
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }

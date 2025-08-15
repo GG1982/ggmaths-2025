@@ -19,7 +19,7 @@
 .price-large {
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--navy);
+    color: var(--primary);
 }
 .price-note {
     font-size: 0.9rem;
@@ -32,7 +32,7 @@
     border: 1px solid #fce8bf; /* A slightly darker secondary border */
     border-radius: 5px;
     font-size: 1rem;
-    color: var(--navy);
+    color: var(--primary);
 }
 
 .price-free-lesson strong {
@@ -44,7 +44,7 @@
     margin-top: 1rem;
     font-style: italic;
     font-size: 0.95rem;
-    color: var(--navy);
+    color: var(--primary);
 }
 
 /* Value Section */
@@ -91,7 +91,7 @@
 
 .value-item .icon-placeholder i {
     font-size: 2rem;
-    color: var(--navy);
+    color: var(--primary);
 }
 
 /* Pricing vs Value Comparison */
@@ -118,9 +118,9 @@
     margin-bottom: 2rem;
 }
 .value-card {
-    background-color: var(--navy);
+    background-color: var(--primary);
     color: #fff;
-    border: 2px solid var(--navy);
+    border: 2px solid var(--primary);
 }
 .value-card h2 {
     font-size: 2rem;

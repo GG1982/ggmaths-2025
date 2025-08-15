@@ -2,7 +2,7 @@
 /* assets/css/global.css */
 :root {
   --white: #fff;
-  --navy: #0B3954;
+  --primary: #0B3954;
   --secondary: #FFB703;
   --light-grey: #f8f9fa;
   --dark-grey: #343a40;
@@ -43,7 +43,7 @@ section {
 }
 
 h1, h2, h3 {
-  color: var(--navy);
+  color: var(--primary);
   font-weight: 700;
   line-height: 1.2;
 }
@@ -90,13 +90,13 @@ a {
 
 .btn-primary {
   background-color: var(--secondary);
-  color: var(--navy);
+  color: var(--primary);
 }
 
 .btn-secondary {
   background-color: transparent;
-  color: var(--navy);
-  border: 2px solid var(--navy);
+  color: var(--primary);
+  border: 2px solid var(--primary);
 }
 
 .placeholder {
@@ -201,7 +201,7 @@ a {
 
 .testimonial-card .author {
   font-weight: 700;
-  color: var(--navy);
+  color: var(--primary);
 }
 
 .styled-list {
@@ -296,7 +296,7 @@ a {
 }
 
 #final-cta {
-  background-color: var(--navy);
+  background-color: var(--primary);
   color: #fff;
   text-align: center;
 }
@@ -376,7 +376,7 @@ a {
 .logo {
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--navy);
+  color: var(--primary);
   text-decoration: none;
   z-index: 1001;
 }
@@ -386,7 +386,7 @@ a {
   font-size: 2rem;
   background: none;
   border: none;
-  color: var(--navy);
+  color: var(--primary);
   cursor: pointer;
 }
 
@@ -400,7 +400,7 @@ a {
 }
 
 .main-nav a {
-  color: var(--navy);
+  color: var(--primary);
   font-weight: 500;
   text-decoration: none;
   transition: color 0.2s ease;
@@ -421,7 +421,7 @@ a {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: var(--navy);
+  background-color: var(--primary);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   min-width: 200px;
   border-radius: 4px;
@@ -453,7 +453,7 @@ a {
 
 /* Short About Section (Include) */
 #about-short {
-  background-color: var(--navy);
+  background-color: var(--primary);
   color: #fff;
 }
 
@@ -548,7 +548,7 @@ a {
   padding: 14px;
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--primary);
   background-color: var(--secondary);
   border: none;
   border-radius: 5px;
@@ -680,7 +680,7 @@ a {
 
 .difference-card h3 {
   margin-bottom: 0.5rem;
-  color: var(--navy);
+  color: var(--primary);
 }
 
 .difference-card p {
@@ -807,7 +807,7 @@ a {
   border-radius: 50%;
   margin: 0 auto 20px auto;
   background-color: var(--secondary);
-  color: var(--navy);
+  color: var(--primary);
   font-size: 2rem;
   display: flex;
   align-items: center;
@@ -908,7 +908,7 @@ a {
 
 .testimonial-card .author {
   font-weight: 700;
-  color: var(--navy);
+  color: var(--primary);
 }
 
 /* Commitment Note */
@@ -969,7 +969,7 @@ a {
   line-height: 40px;
   border-radius: 50%;
   background-color: var(--secondary);
-  color: var(--navy);
+  color: var(--primary);
   font-size: 1.2rem;
   font-weight: 700;
   margin: 0 auto 1rem auto;
@@ -1018,7 +1018,7 @@ a {
 
 #faq-teaser .faq-item .faq-question {
   font-weight: 700;
-  color: var(--navy);
+  color: var(--primary);
   margin-bottom: 0.5rem;
 }
 
@@ -1129,7 +1129,7 @@ a {
 .system-item h3 {
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
-  color: var(--navy);
+  color: var(--primary);
 }
 
 .system-item p {
@@ -1214,7 +1214,7 @@ a {
 
 .faq-question {
   font-weight: 700;
-  color: var(--navy);
+  color: var(--primary);
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
 }
@@ -1251,7 +1251,7 @@ a {
 
 .mini-bio-photo i {
   font-size: 3rem;
-  color: var(--navy);
+  color: var(--primary);
 }
 
 .mini-bio-content h3 {
@@ -1297,7 +1297,7 @@ a {
 
 .story-container h3 {
   margin-top: 2rem;
-  color: var(--navy);
+  color: var(--primary);
 }
 
 /* --- Timeline Section --- */
@@ -1372,14 +1372,14 @@ a {
   line-height: var(--timeline-icon-size);
   border-radius: 50%; /* Restored to a circle */
   background-color: var(--gold); /* Restored the background color */
-  border: 3px solid var(--navy); /* Restored the border */
+  border: 3px solid var(--primary); /* Restored the border */
   z-index: 1;
 }
 
 .timeline li strong {
   display: block;
   font-size: 1.2rem;
-  color: var(--navy);
+  color: var(--primary);
   font-weight: 700;
   margin-bottom: 5px;
 }
@@ -1391,7 +1391,7 @@ a {
 }
 
 .timeline li a:hover {
-  color: var(--navy);
+  color: var(--primary);
 }
 
 /* Responsive adjustment */
@@ -1530,7 +1530,7 @@ a {
 }
 
 .philosophy-item h3 {
-  color: var(--navy);
+  color: var(--primary);
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
@@ -1625,7 +1625,7 @@ a {
 #faq-page .faq-item summary {
   font-size: 1.2rem;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--primary);
   cursor: pointer;
   list-style: none;
   position: relative;
@@ -1712,7 +1712,7 @@ a {
 .price-large {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--navy);
+  color: var(--primary);
 }
 
 .price-note {
@@ -1727,7 +1727,7 @@ a {
   border: 1px solid #fce8bf; /* A slightly darker secondary border */
   border-radius: 5px;
   font-size: 1rem;
-  color: var(--navy);
+  color: var(--primary);
 }
 
 .price-free-lesson strong {
@@ -1739,7 +1739,7 @@ a {
   margin-top: 1rem;
   font-style: italic;
   font-size: 0.95rem;
-  color: var(--navy);
+  color: var(--primary);
 }
 
 /* Value Section */
@@ -1791,7 +1791,7 @@ a {
 
 .value-item .icon-placeholder i {
   font-size: 2rem;
-  color: var(--navy);
+  color: var(--primary);
 }
 
 /* Pricing vs Value Comparison */
@@ -1818,9 +1818,9 @@ a {
     margin-bottom: 2rem;
 }
 .value-card {
-    background-color: var(--navy);
+    background-color: var(--primary);
     color: #fff;
-    border: 2px solid var(--navy);
+    border: 2px solid var(--primary);
 }
 .value-card h2 {
     font-size: 2rem;
@@ -1963,7 +1963,7 @@ a {
 .tutor-specialism {
   font-size: 1rem;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--primary);
   margin-bottom: 1rem;
 }
 
@@ -1992,7 +1992,7 @@ a {
 .why-item h3 {
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
-  color: var(--navy);
+  color: var(--primary);
 }
 
 .why-item p {
@@ -2099,7 +2099,7 @@ a {
 }
 
 .post-title a {
-  color: var(--navy);
+  color: var(--primary);
   text-decoration: none;
 }
 
@@ -2131,7 +2131,7 @@ a {
 
 .page-link {
   font-weight: 600;
-  color: var(--navy);
+  color: var(--primary);
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -2208,7 +2208,7 @@ a {
 }
 
 .pullquote {
-  border-left: 3px solid var(--navy);
+  border-left: 3px solid var(--primary);
   padding-left: 1rem;
   font-style: italic;
   color: var(--text-light);
@@ -2216,7 +2216,7 @@ a {
 
 .story-content h3 {
   font-size: 1.5rem;
-  color: var(--navy);
+  color: var(--primary);
   margin-top: 0;
 }
 
@@ -2228,7 +2228,7 @@ a {
 .story-tags .tag {
   display: inline-block;
   background-color: #E6E6E6;
-  color: var(--navy);
+  color: var(--primary);
   font-size: 0.8rem;
   font-weight: 600;
   padding: 0.35rem 0.75rem;
