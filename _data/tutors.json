@@ -2,36 +2,36 @@
   {
     "name": "Giuliano Grasso",
     "photo_url": "/assets/images/tutors/giuliano.jpg",
-    "qualification": "BSc Mathematics, University of East Anglia",
+    "qualification": "BSc Mathematics",
     "specialism": "GCSE & A-Level Maths",
     "bio": "Founder of GG Maths with over a decade of full-time tutoring experience. He personally trains every tutor on our team to deliver our proven, systematic approach. Giuliano specialises in helping students jump multiple grades through targeted, systematic practice."
   },
   {
-    "name": "Akbar Khan",
-    "photo_url": "/assets/images/tutors/akbar.jpg",
-    "qualification": "MEng Engineering, Imperial College London",
-    "specialism": "A-Level Maths & Further Maths",
-    "bio": "An expert in advanced problem-solving and exam technique, Akbar is known for breaking down complex A-Level topics into simple, understandable steps. His passion is helping ambitious students achieve their top grades and secure places at competitive universities."
-  },
-  {
-    "name": "Sophie Taylor",
-    "photo_url": "/assets/images/tutors/sophie.jpg",
-    "qualification": "PGCE Secondary Mathematics",
-    "specialism": "KS2 & GCSE Maths",
-    "bio": "Sophie brings a friendly, patient, and engaging approach to her lessons, making maths fun for younger learners. As a qualified secondary school teacher, she is skilled at building confidence and addressing foundational knowledge gaps for both KS2 and GCSE students."
-  },
-  {
-    "name": "Bruna Mot Barbosa",
-    "photo_url": "/assets/images/tutors/bruna.jpeg",
-    "qualification": "MSc Computer Science, Federal University of Goiás",
+    "name": "Gabriella Damas",
+    "photo_url": "/assets/images/tutors/gabriella.jpeg",
+    "qualification": "MSc Physics, PhD in Quantum Physics",
     "specialism": "GCSE & A-Level Maths",
-    "bio": "Based in Brazil, Bruna is a patient and supportive tutor with experience teaching at high school, university, and postgraduate levels. She specialises in logic to strengthen mathematical thinking and problem-solving. Bruna’s step-by-step approach builds confidence and ensures steady progress."
+    "bio": "Gabriella has more than ten years of experience teaching Maths and Physics, with expertise in algebra and probability. She is known for making difficult topics relatable through everyday examples and step-by-step problem-solving. Gabriella has helped students of all abilities succeed, including guiding one into medical school."
   },
   {
     "name": "Rohan Jagpal",
     "photo_url": "/assets/images/tutors/rohan.png",
-    "qualification": "MEng Electrical and Electronic Engineering, University of Bristol",
+    "qualification": "MEng Electrical and Electronic Engineering",
     "specialism": "GCSE & A-Level Maths (Pure & Mechanics)",
     "bio": "Rohan is an enthusiastic, motivating tutor who works brilliantly with both confidence-builders and high-achievers. He teaches through visual, real-world examples and challenges students to test the depth of their understanding. His focus is on steady progress and genuine confidence."
+  },
+  {
+    "name": "Bruna Mot Barbosa",
+    "photo_url": "/assets/images/tutors/bruna.jpeg",
+    "qualification": "MSc Computer Science",
+    "specialism": "GCSE & A-Level Maths",
+    "bio": "Based in Brazil, Bruna is a patient and supportive tutor with experience teaching at high school, university, and postgraduate levels. She specialises in logic to strengthen mathematical thinking and problem-solving. Bruna’s step-by-step approach builds confidence and ensures steady progress."
+  },
+  {
+    "name": "Alexandre Bidinotto",
+    "photo_url": "/assets/images/tutors/alexandre.jpg",
+    "qualification": "MSc Theoretical Physics",
+    "specialism": "GCSE & A-Level Maths",
+    "bio": "Alexandre has over five years of experience helping students excel in Maths and Physics. He specialises in turning complex ideas into clear, engaging lessons, while encouraging independent thinking and problem-solving. His approach has guided students to high achievements, including success in the Brazilian Physics Olympiad."
   }
 ]
