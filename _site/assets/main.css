@@ -357,7 +357,7 @@ a {
     margin-bottom: 20px;
   }
 }
-/* Navigation Styles */
+/* ========= Base header styles ========= */
 .main-header {
   background-color: var(--light-grey);
   padding: 20px 0;
@@ -378,9 +378,9 @@ a {
   font-weight: 700;
   color: var(--primary);
   text-decoration: none;
-  z-index: 1001;
 }
 
+/* Hamburger (shown on mobile only) */
 .nav-toggle {
   display: none;
   font-size: 2rem;
@@ -390,33 +390,38 @@ a {
   cursor: pointer;
 }
 
-.main-nav .nav-list {
+/* ========= Desktop nav (scoped) ========= */
+.main-nav-desktop {
+  display: block;
+}
+
+.main-nav-desktop .nav-list {
   list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   gap: 25px;
+  margin: 0;
+  padding: 0;
   align-items: center;
 }
 
-.main-nav a {
+.main-nav-desktop a {
   color: var(--primary);
   font-weight: 600;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
-.main-nav a:hover,
-.main-nav a:focus {
+.main-nav-desktop a:hover,
+.main-nav-desktop a:focus {
   color: var(--secondary);
 }
 
-/* Dropdown Menu (Desktop) */
-.main-nav .dropdown {
+/* Desktop dropdowns limited to desktop scope */
+.main-nav-desktop .dropdown {
   position: relative;
 }
 
-.main-nav .dropdown-menu {
+.main-nav-desktop .dropdown-menu {
   display: none;
   position: absolute;
   top: 100%;
@@ -427,16 +432,16 @@ a {
   border-radius: 4px;
   padding: 10px 0;
   z-index: 10;
+  list-style: none;
   flex-direction: column;
-  list-style: none; /* Add this line to remove the bullet points */
 }
 
-.main-nav .dropdown:hover > .dropdown-menu,
-.main-nav .dropdown:focus-within > .dropdown-menu {
+.main-nav-desktop .dropdown:hover > .dropdown-menu,
+.main-nav-desktop .dropdown:focus-within > .dropdown-menu {
   display: flex;
 }
 
-.main-nav .dropdown-menu a {
+.main-nav-desktop .dropdown-menu a {
   display: block;
   padding: 12px 20px;
   color: var(--white);
@@ -445,12 +450,98 @@ a {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.main-nav .dropdown-menu a:hover,
-.main-nav .dropdown-menu a:focus {
+.main-nav-desktop .dropdown-menu a:hover,
+.main-nav-desktop .dropdown-menu a:focus {
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--secondary);
 }
 
+/* ========= Mobile nav (scoped) ========= */
+.main-nav-mobile {
+  display: none; /* toggled via .is-open on mobile */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--light-grey);
+  border-top: 1px solid #eee;
+  padding: 16px;
+  z-index: 1000;
+}
+
+.main-nav-mobile .mobile-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav-mobile a {
+  display: block;
+  padding: 14px 0;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+/* Hover and keyboard focus */
+.main-nav-mobile a:hover,
+.main-nav-mobile a:focus-visible {
+  color: var(--secondary);
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* Remove generic blue outline when programmatically focused */
+.main-nav-mobile a:focus {
+  outline: none;
+}
+
+/* Remove divider from last item */
+.main-nav-mobile .mobile-list li:last-child a {
+  border-bottom: none;
+}
+
+/* Active/current page link highlight */
+.main-nav-mobile a.is-active,
+.main-nav-desktop a.is-active {
+  color: var(--secondary);
+  font-weight: 700;
+  border-left: 3px solid var(--secondary);
+  padding-left: 11px; /* adjust for left border */
+}
+
+/* ========= Responsive visibility ========= */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+  /* Hide desktop nav entirely on mobile */
+  .main-nav-desktop {
+    display: none;
+  }
+  /* Mobile nav starts hidden, shown when toggled */
+  .main-nav-mobile {
+    display: none;
+  }
+  .main-nav-mobile.is-open {
+    display: block;
+  }
+}
+@media (min-width: 769px) {
+  .nav-toggle {
+    display: none;
+  }
+  .main-nav-desktop {
+    display: block;
+  }
+  .main-nav-mobile {
+    display: none !important;
+  }
+}
 /* Short About Section (Include) */
 #about-short {
   background-color: var(--primary);
