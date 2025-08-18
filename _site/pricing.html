@@ -97,6 +97,10 @@
     allLinks.forEach(a => {
       a.classList.remove('is-active');
       a.removeAttribute('aria-current');
+
+      const href = a.getAttribute('href');
+      if (!href || href === '#') return; // skip dropdown toggles
+
       const linkPath = new URL(a.href, location.origin).pathname.replace(/index\.html?$/i, '/');
       if (linkPath === current) {
         a.classList.add('is-active');
@@ -104,6 +108,7 @@
       }
     });
   }
+
   markActiveLinks();
 
   // Toggle open/close (focus the panel, not the first link)

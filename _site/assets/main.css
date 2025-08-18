@@ -507,7 +507,7 @@ a {
 
 /* Active/current page link highlight */
 .main-nav-mobile a.is-active,
-.main-nav-desktop a.is-active {
+.main-nav-desktop a.is-active:not(.dropdown-toggle) {
   color: var(--secondary);
   font-weight: 700;
   border-left: 3px solid var(--secondary);
