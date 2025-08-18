@@ -73,7 +73,7 @@
     height: 0;
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
-    border-top: 14px solid var(--gold);
+    border-top: 14px solid var(--secondary);
 }
 
 .timeline li {
@@ -100,7 +100,7 @@
     height: var(--timeline-icon-size);
     line-height: var(--timeline-icon-size);
     border-radius: 50%; /* Restored to a circle */
-    background-color: var(--gold); /* Restored the background color */
+    background-color: var(--secondary); /* Restored the background color */
     border: 3px solid var(--primary); /* Restored the border */
     z-index: 1;
 }
@@ -114,7 +114,7 @@
 }
 
 .timeline li a {
-    color: var(--gold);
+    color: var(--secondary);
     text-decoration: underline;
     font-weight: 500;
 }
@@ -145,7 +145,7 @@
 .stat-item .stat-number {
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--gold);
+    color: var(--secondary);
 }
 
 .stat-item .stat-label {
@@ -280,7 +280,7 @@
     left: 0;
     top: 0;
     font-weight: 700;
-    color: var(--gold);
+    color: var(--secondary);
     font-size: 1.3rem;
     line-height: 1;
 }
