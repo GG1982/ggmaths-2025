@@ -1141,8 +1141,9 @@ a {
   #meet-team-short .team-photo {
     width: 100%;
     height: auto;
-    max-width: 300px;
+    max-width: 400px;
     margin-bottom: 1rem;
+    order: 1;
   }
   .testimonials-row {
     flex-direction: column;
@@ -1521,9 +1522,7 @@ a {
     text-align: center;
   }
   .about-hero-photo {
-    width: 100%;
-    height: 300px;
-    margin-top: 2rem;
+    display: none;
   }
   .stats-bar {
     flex-direction: column;

@@ -459,8 +459,9 @@
     #meet-team-short .team-photo {
         width: 100%;
         height: auto;
-        max-width: 300px;
+        max-width: 400px;
         margin-bottom: 1rem;
+        order: 1;
     }
     .testimonials-row {
         flex-direction: column;
