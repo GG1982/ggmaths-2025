@@ -940,45 +940,95 @@ a {
   font-weight: 600;
 }
 
-.testimonials-row {
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
-
+/* 1) Make the video a real 16:9 box and fill it */
 .video-testimonial-card {
   position: relative;
-  width: 350px;
-  height: 200px;
+  width: 100%;
+  max-width: 420px; /* was 350px; gives a bit more presence */
+  aspect-ratio: 16/9; /* replaces fixed height */
   background-color: var(--dark-grey);
   border-radius: 8px;
+  overflow: hidden; /* clean corners for iframe */
   cursor: pointer;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
 }
 
+.video-testimonial-card iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* 2) Improve testimonial readability and balance */
 .testimonial-card {
   flex: 1;
   min-width: 300px;
-  max-width: 500px;
-  padding: 30px;
+  max-width: 100%; /* a tad wider to match 16:9 card */
+  padding: 28px 30px;
   background-color: var(--light-grey);
-  border-left: 5px solid var(--secondary);
+  border-left: 6px solid var(--secondary);
   border-radius: 8px;
   text-align: left;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
 }
 
 .testimonial-card .quote {
   font-style: italic;
   color: var(--text-light);
-  margin-bottom: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
 }
 
 .testimonial-card .author {
   font-weight: 700;
   color: var(--primary);
+  margin-bottom: 0.5rem;
 }
 
+/* 3) Row spacing/behavior */
+.testimonials-row {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2.5rem; /* a touch more air */
+  flex-wrap: wrap; /* prevents overflow on mid-sized screens */
+}
+
+/* 4) Interactivity & accessibility on video card */
+.video-testimonial-card:focus,
+.video-testimonial-card:focus-within {
+  outline: 3px solid var(--secondary);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px color-mix(in oklab, var(--secondary), transparent 70%);
+}
+
+.video-testimonial-card:hover {
+  transform: translateY(-2px);
+  transition: transform 120ms ease;
+}
+
+/* 5) Mobile stacking */
+@media (max-width: 768px) {
+  .testimonials-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .video-testimonial-card {
+    max-width: 100%;
+  }
+}
+/* 6) Optional: respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .video-testimonial-card:hover {
+    transform: none;
+  }
+  * {
+    scroll-behavior: auto;
+  }
+}
 /* Commitment Note */
 #commitment-note {
   padding: 60px 0;
@@ -1121,16 +1171,6 @@ a {
     max-width: 400px;
     margin-bottom: 1rem;
     order: 1;
-  }
-  .testimonials-row {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  .video-testimonial-card {
-    width: 100%;
-  }
-  .testimonial-card {
-    width: 100%;
   }
   #faq-teaser .faq-row {
     flex-direction: column;
