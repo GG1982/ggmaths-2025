@@ -84,15 +84,15 @@ description: "Meet the team of expert maths tutors at GG Maths, founded by Giuli
                 <div class="stat-label">Typical improvement</div>
             </div>
         </div>
-        <div class="cards-container" style="margin-top: 3rem;">
-            <div class="testimonial-card">
-                <p class="quote">"Giuliano has a unique ability to explain things clearly and patiently. He completely changed my son's attitude towards maths."</p>
-                <p class="author">— Maria, Parent of A-Level Student</p>
-            </div>
-            <div class="testimonial-card">
-                <p class="quote">"The best tutor I've ever had. I went from hating maths to getting an A* and securing my place to study Medicine."</p>
-                <p class="author">— Sam, Former Student</p>
-            </div>
+
+        <div class="cards-container">
+            {% assign primary_reviews = site.data.reviews | where_exp: "item", "item.level contains 'GCSE'" %}
+            {% for review in primary_reviews limit:2 %}
+                <div class="testimonial-card">
+                    <p class="quote">"{{ review.testimonial }}"</p>
+                    <p class="author">— {{ review.name }}, {{ review.level }}</p>
+                </div>
+            {% endfor %}
         </div>
     </div>
 </section>
