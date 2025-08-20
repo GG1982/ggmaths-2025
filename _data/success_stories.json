@@ -1,5 +1,22 @@
 [
   {
+    "id": "ben-gcse-achievement",
+    "student_name": "Ben",
+    "title": "Ben — GCSE Achievement",
+    "tags": ["GCSE"],
+    "video": {
+      "url": "https://www.youtube.com/embed/yWIA0IojgYE",
+      "title": "Ben’s Maths Journey"
+    },
+    "pullquote": "I started Year 11 on a Grade 3. By exam day, I achieved a Grade 7. It was unbelievable.",
+    "summary": "Ben began Year 11 at a Grade 3 in GCSE Maths, lacking confidence after years of gaps in his foundations. With a targeted approach — tackling topics step by step and mastering each before moving on — his skills and confidence grew rapidly. In just nine months, he achieved a Grade 7 in his GCSEs, a remarkable four-grade improvement that transformed his outlook on maths and learning.",
+    "outcomes": {
+      "gcse_predicted": "3",
+      "gcse_achieved": "7"
+    },
+    "entry_stage": "Year 11"
+  },
+  {
     "id": "kiran-gcse-alevel",
     "student_name": "Kiran",
     "title": "Kiran — GCSE & A-Level Achievement",
@@ -34,7 +51,7 @@
       "improved_score_calc": "53/60"
     },
     "entry_stage": "Year 7"
-},
+  },
   {
     "id": "emily-alevel",
     "student_name": "Emily",

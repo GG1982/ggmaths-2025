@@ -121,15 +121,29 @@ description: "Expert 1:1 online maths tuition for ages 7-18. Our highly qualifie
                 <div class="stat-label">YouTube subs</div>
             </div>
         </div>
+
+
+        {% assign ben_story = site.data.success_stories | where: "id", "ben-gcse-achievement" | first %}
+
         <div class="testimonials-row">
-            <div class="testimonial-card">
-                <p class="quote">"I went from a Grade 3 to a Grade 7 in less than a year! Giuliano really improved my understanding of maths and made the process enjoyable."</p>
-                <p class="author">— Ben H., GCSE Student</p>
-            </div>
-            <div class="video-testimonial-card placeholder">
-                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+        <div class="testimonial-card">
+            <p class="quote">"{{ ben_story.pullquote }}"</p>
+            <p class="author">— {{ ben_story.student_name }}, {{ ben_story.tags | join: ", " }} Student</p>
+            <p class="summary">{{ ben_story.summary | truncatewords: 20, "..." }}</p>
+        </div>
+        <div class="video-testimonial-card">
+            <div class="video-container">
+            <iframe 
+                src="{{ ben_story.video.url }}" 
+                title="{{ ben_story.video.title }}" 
+                loading="lazy" 
+                allowfullscreen>
+            </iframe>
             </div>
         </div>
+        </div>
+
+
         <a href="{{ '/success-stories.html' | relative_url }}" class="btn btn-secondary btn-large">See More Success Stories</a>
     </div>
 </section>
