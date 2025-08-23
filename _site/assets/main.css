@@ -944,11 +944,11 @@ a {
 .video-testimonial-card {
   position: relative;
   width: 100%;
-  max-width: 420px; /* was 350px; gives a bit more presence */
-  aspect-ratio: 16/9; /* replaces fixed height */
+  max-width: 420px;
+  aspect-ratio: 16/9;
   background-color: var(--dark-grey);
   border-radius: 8px;
-  overflow: hidden; /* clean corners for iframe */
+  overflow: hidden;
   cursor: pointer;
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
 }
@@ -965,7 +965,7 @@ a {
 .testimonial-card {
   flex: 1;
   min-width: 300px;
-  max-width: 100%; /* a tad wider to match 16:9 card */
+  max-width: 100%;
   padding: 28px 30px;
   background-color: var(--light-grey);
   border-left: 6px solid var(--secondary);
@@ -993,7 +993,7 @@ a {
   align-items: stretch;
   justify-content: center;
   gap: 2rem;
-  margin-bottom: 2.5rem; /* a touch more air */
+  margin-bottom: 2.5rem;
   flex-wrap: wrap; /* prevents overflow on mid-sized screens */
 }
 
