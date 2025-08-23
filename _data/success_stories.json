@@ -2,7 +2,7 @@
   {
     "id": "ben-gcse-achievement",
     "student_name": "Ben",
-    "title": "Ben — GCSE Achievement",
+    "title": "From Grade 3 to Grade 7 — Ben’s Incredible GCSE Maths Journey",
     "tags": ["GCSE"],
     "video": {
       "url": "https://www.youtube.com/embed/yWIA0IojgYE",
@@ -19,7 +19,7 @@
   {
     "id": "kiran-gcse-alevel",
     "student_name": "Kiran",
-    "title": "Kiran — GCSE & A-Level Achievement",
+    "title": "Kiran’s Maths Journey — From Predicted Grade 6 at GCSE to A at A-Level",
     "tags": ["GCSE", "A-Level"],
     "video": {
       "url": "https://www.youtube.com/embed/YB_D8rCUBCE",
@@ -51,6 +51,23 @@
       "improved_score_calc": "53/60"
     },
     "entry_stage": "Year 7"
+  },
+  {
+    "id": "akbar-alevel-achievement",
+    "student_name": "Akbar",
+    "title": "Akbar — A-Level Achievement",
+    "tags": ["A-Level"],
+    "video": {
+      "url": "https://www.youtube.com/embed/3Tb8j1rmarQ",
+      "title": "Akbar’s A-Level Maths Journey"
+    },
+    "pullquote": "I started Year 12 at a grade C. Within two months, I was scoring an A — and by exam day, I achieved it.",
+    "summary": "Akbar entered Year 12 struggling with confidence and scoring around a C in assessments. By learning topics ahead of school, finishing the syllabus early, and tackling A* questions, he rapidly improved. Within two months he was scoring an A in mocks and went on to achieve an A at A-Level before starting Computer Science at Queen Mary University.",
+    "outcomes": {
+      "alevel_predicted": "C",
+      "alevel_achieved": "A"
+    },
+    "entry_stage": "Year 12 (mid-year)"
   },
   {
     "id": "emily-alevel",
