@@ -6,7 +6,7 @@
   --secondary: #FFB703;
   --light-grey: #f8f9fa;
   --dark-grey: #343a40;
-  --text-light: #6c757d;
+  --text-light: #5a646b;
   --red-light: #fff5f5;
   --red-dark: #e74c3c;
   --green-light: #f0fff0;
@@ -39,7 +39,10 @@ body {
 
 section {
   padding: 80px 0;
-  scroll-margin-top: 20px;
+}
+
+:where(section, h2, h3, [id]) {
+  scroll-margin-top: 90px;
 }
 
 h1, h2, h3 {
@@ -162,7 +165,7 @@ a {
 }
 
 .footer-socials a {
-  margin-right: 15px;
+  margin-right: 44px;
 }
 
 .footer-bottom {
@@ -357,6 +360,62 @@ a {
     margin-bottom: 20px;
   }
 }
+@media (prefers-contrast: more) {
+  :root {
+    --light-grey: #f2f2f2; /* slightly darker background */
+  }
+  :where(a, button, input, select, textarea):focus-visible {
+    outline-width: 4px;
+  }
+  .btn-primary {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1254901961);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* Skip link (appears when focused) */
+.skip-link {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+/* Global, consistent focus ring */
+:where(a, button, [role=button], input, select, textarea, summary, .video-testimonial-card):focus {
+  outline: none; /* we’ll replace with a custom ring on :focus-visible */
+}
+
+:where(a, button, [role=button], input, select, textarea, summary, .video-testimonial-card):focus-visible {
+  outline: 3px solid var(--secondary);
+  outline-offset: 3px;
+}
+
+/* Buttons: minimum touch target height */
+.btn, .form-btn, .whatsapp-btn, .package-card .btn {
+  min-height: 44px;
+}
+
+/* Mobile nav links already have padding; ensure >=44px total */
+@media (max-width: 768px) {
+  .main-nav-mobile a {
+    padding: 14px 0;
+    line-height: 1.4;
+  }
+}
 /* ========= Base header styles ========= */
 .main-header {
   background-color: var(--light-grey);
@@ -542,6 +601,12 @@ a {
     display: none !important;
   }
 }
+/* Keep nav focus readable on dark dropdown background */
+.main-nav-desktop .dropdown-menu a:focus-visible {
+  outline: 3px solid var(--secondary);
+  outline-offset: 2px;
+}
+
 /* Short About Section (Include) */
 #about-short {
   background-color: var(--primary);
@@ -586,7 +651,6 @@ a {
 }
 
 #contact-section {
-  scroll-margin-top: 50px; /* Adjust to your header height */
   background-color: var(--light-grey);
 }
 

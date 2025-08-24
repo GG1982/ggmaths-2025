@@ -5,7 +5,7 @@
     --secondary: #FFB703;
     --light-grey: #f8f9fa;
     --dark-grey: #343a40;
-    --text-light: #6c757d;
+    --text-light: #5a646b;
     --red-light: #fff5f5;
     --red-dark: #e74c3c;
     --green-light: #f0fff0;
@@ -18,7 +18,9 @@ html { scroll-behavior: smooth; }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Poppins', sans-serif; line-height: 1.6; color: var(--dark-grey); background-color: #fff; }
 .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-section { padding: 80px 0; scroll-margin-top: 20px; }
+section { padding: 80px 0;}
+:where(section, h2, h3, [id]) { scroll-margin-top: 90px; }
+
 h1, h2, h3 { color: var(--primary); font-weight: 700; line-height: 1.2; }
 h1 { font-size: 3rem; margin-bottom: 1rem; }
 h2 { font-size: 2.5rem; text-align: center; margin-bottom: 3rem; }
@@ -44,7 +46,7 @@ a { text-decoration: none; color: var(--secondary); font-weight: 600; }
 .footer-links a { color: #fff; font-weight: 400; transition: color 0.2s ease; }
 .footer-links li { margin-bottom: 10px; }
 .footer-socials h4 { color: #fff; margin-bottom: 1rem; }
-.footer-socials a { margin-right: 15px; }
+.footer-socials a { margin-right: 44px; }
 .footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid #495057; font-size: 0.9rem; color: var(--text-light); }
 
 /* Reusable Components */
@@ -89,99 +91,64 @@ a { text-decoration: none; color: var(--secondary); font-weight: 600; }
     .col { margin-bottom: 20px; }
 }
 
-// /* Navigation Styles */
-// .main-header {
-//   background-color: var(--light-grey);
-//   padding: 20px 0;
-//   border-bottom: 1px solid #eee;
-//   position: sticky;
-//   top: 0;
-//   z-index: 1000;
-// }
+@media (prefers-contrast: more) {
+  :root {
+    --light-grey: #f2f2f2; /* slightly darker background */
+  }
+  :where(a, button, input, select, textarea):focus-visible {
+    outline-width: 4px;
+  }
+  .btn-primary {
+    box-shadow: 0 0 0 3px #00000020;
+  }
+}
 
-// .main-header .container {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-// }
 
-// .logo {
-//   font-size: 1.8rem;
-//   font-weight: 700;
-//   color: var(--primary);
-//   text-decoration: none;
-//   z-index: 1001;
-// }
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
 
-// .nav-toggle {
-//   display: none;
-//   font-size: 2rem;
-//   background: none;
-//   border: none;
-//   color: var(--primary);
-//   cursor: pointer;
-// }
+/* Skip link (appears when focused) */
+.skip-link {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
 
-// .main-nav .nav-list {
-//   list-style: none;
-//   padding: 0;
-//   margin: 0;
-//   display: flex;
-//   gap: 25px;
-//   align-items: center;
-// }
 
-// .main-nav a {
-//   color: var(--primary);
-//   font-weight: 600;
-//   text-decoration: none;
-//   transition: color 0.2s ease;
-// }
+/* Global, consistent focus ring */
+:where(a, button, [role="button"], input, select, textarea, summary, .video-testimonial-card):focus {
+  outline: none; /* we’ll replace with a custom ring on :focus-visible */
+}
 
-// .main-nav a:hover,
-// .main-nav a:focus {
-//   color: var(--secondary);
-// }
+:where(a, button, [role="button"], input, select, textarea, summary, .video-testimonial-card):focus-visible {
+  outline: 3px solid var(--secondary);
+  outline-offset: 3px;
+}
 
-// /* Dropdown Menu (Desktop) */
-// .main-nav .dropdown {
-//   position: relative;
-// }
 
-// .main-nav .dropdown-menu {
-//   display: none;
-//   position: absolute;
-//   top: 100%;
-//   left: 0;
-//   background-color: var(--primary);
-//   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-//   min-width: 200px;
-//   border-radius: 4px;
-//   padding: 10px 0;
-//   z-index: 10;
-//   flex-direction: column;
-//   list-style: none; /* Add this line to remove the bullet points */
-// }
+/* Buttons: minimum touch target height */
+.btn, .form-btn, .whatsapp-btn, .package-card .btn {
+  min-height: 44px;
+}
 
-// .main-nav .dropdown:hover > .dropdown-menu,
-// .main-nav .dropdown:focus-within > .dropdown-menu {
-//   display: flex;
-// }
+/* Mobile nav links already have padding; ensure >=44px total */
+@media (max-width: 768px) {
+  .main-nav-mobile a { padding: 14px 0; line-height: 1.4; }
+}
 
-// .main-nav .dropdown-menu a {
-//   display: block;
-//   padding: 12px 20px;
-//   color: var(--white);
-//   font-weight: 400;
-//   white-space: nowrap;
-//   transition: background-color 0.2s ease, color 0.2s ease;
-// }
-
-// .main-nav .dropdown-menu a:hover,
-// .main-nav .dropdown-menu a:focus {
-//   background-color: rgba(255, 255, 255, 0.1);
-//   color: var(--secondary);
-// }
 
 
 /* ========= Base header styles ========= */
@@ -335,7 +302,11 @@ a { text-decoration: none; color: var(--secondary); font-weight: 600; }
   .main-nav-mobile { display: none !important; }
 }
 
-
+/* Keep nav focus readable on dark dropdown background */
+.main-nav-desktop .dropdown-menu a:focus-visible {
+  outline: 3px solid var(--secondary);
+  outline-offset: 2px;
+}
 
 /* Short About Section (Include) */
 #about-short {
@@ -383,7 +354,6 @@ a { text-decoration: none; color: var(--secondary); font-weight: 600; }
 }
 
 #contact-section {
-    scroll-margin-top: 50px; /* Adjust to your header height */
     background-color: var(--light-grey);
 }
 
@@ -448,6 +418,7 @@ a { text-decoration: none; color: var(--secondary); font-weight: 600; }
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
 
 /* WhatsApp Button */
 .whatsapp-container {
