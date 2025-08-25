@@ -68,39 +68,5 @@
       "alevel_achieved": "A"
     },
     "entry_stage": "Year 12 (mid-year)"
-  },
-  {
-    "id": "emily-alevel",
-    "student_name": "Emily",
-    "title": "Emily — From B to A* at A-Level",
-    "tags": ["A-Level"],
-    "video": {
-      "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      "title": "Emily’s A-Level Maths Journey"
-    },
-    "pullquote": "The step from GCSE to A-Level was huge, but I felt supported every step of the way.",
-    "summary": "Emily was aiming for a B in A-Level Maths but wanted an A* to secure a place at her dream university. We focused on advanced problem-solving, calculus, and proof techniques, building depth of understanding. She achieved her A* and gained a place at Cambridge.",
-    "outcomes": {
-      "alevel_predicted": "B",
-      "alevel_achieved": "A*"
-    },
-    "entry_stage": "Year 12"
-  },
-  {
-    "id": "matthew-gcse",
-    "student_name": "Matthew",
-    "title": "Matthew — Confidence and Results",
-    "tags": ["GCSE"],
-    "video": {
-      "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      "title": "Matthew’s Maths Confidence Story"
-    },
-    "pullquote": "I used to think I wasn’t a ‘maths person’ — now I know I can do it.",
-    "summary": "Matthew entered Year 10 struggling with maths and self-belief, predicted a Grade 4. By starting with strong foundations and building up to more complex topics, his confidence soared. He achieved a Grade 8 in GCSE Maths and now feels ready for any challenge.",
-    "outcomes": {
-      "gcse_predicted": "4",
-      "gcse_achieved": "8"
-    },
-    "entry_stage": "Year 10"
   }
 ]
