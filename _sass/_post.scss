@@ -32,6 +32,17 @@
     .dot {
       color: #A0A0A0;
     }
+
+    .tag {
+        display: inline-block;
+        background-color: var(--light-grey);
+        color: var(--dark-grey); 
+        padding: 0.25rem 0.6rem;
+        border-radius: 999px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        border: 1px solid #ddd;
+    }
   }
 
   .post-thumbnail {
