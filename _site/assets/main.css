@@ -2194,6 +2194,7 @@ a {
   background-color: var(--light-grey);
   text-align: center;
   padding: 80px 0;
+  border-bottom: 1px solid #eee;
 }
 
 #blog-hero h1 {
@@ -2201,7 +2202,7 @@ a {
 }
 
 .hero-subheadline {
-  color: var(--text-light);
+  color: var(--text-muted);
   font-size: 1.2rem;
 }
 
@@ -2210,21 +2211,21 @@ a {
   padding: 80px 0;
 }
 
-#blog-posts h2 {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
 .post-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: 1fr;
   gap: 2rem;
 }
 
+@media (min-width: 992px) {
+  .post-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 /* --- Post Card Styling --- */
 .post-card {
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
@@ -2237,31 +2238,45 @@ a {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-.post-thumbnail img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+.post-thumbnail {
+  display: block;
+  overflow: hidden;
 }
 
-.post-content {
+.post-thumbnail img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.post-card:hover .post-thumbnail img {
+  transform: scale(1.05);
+}
+
+.post-card-content {
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  flex-grow: 1; /* Allows the button to stick to the bottom */
+  flex-grow: 1;
 }
 
 .post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
   margin-bottom: 0.75rem;
 }
 
 .tag {
   display: inline-block;
-  background: var(--light-grey);
-  color: var(--text-light);
+  background-color: var(--light-grey);
+  color: var(--dark-grey);
   padding: 0.25rem 0.6rem;
   border-radius: 999px;
   font-size: 0.8rem;
   font-weight: 600;
+  border: 1px solid #ddd;
 }
 
 .post-title {
@@ -2280,13 +2295,20 @@ a {
 
 .post-meta {
   font-size: 0.9rem;
-  color: var(--text-light);
+  color: var(--text-muted);
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.author {
+  font-weight: 600;
 }
 
 .post-excerpt {
-  color: var(--text-light);
-  flex-grow: 1; /* Pushes the button down */
+  color: var(--text);
+  flex-grow: 1;
   margin-bottom: 1.5rem;
 }
 
@@ -2314,12 +2336,12 @@ a {
 }
 
 .page-link.disabled {
-  color: var(--text-light);
+  color: var(--text-muted);
   pointer-events: none;
 }
 
 .page-status {
-  color: var(--text-light);
+  color: var(--text-muted);
   font-weight: 600;
 }
 
@@ -2436,6 +2458,83 @@ a {
     gap: 2rem;
     margin-bottom: 3rem;
   }
+}
+/* /_sass/_post.scss */
+.post .post-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.post .post-header {
+  text-align: center;
+  margin: 40px 0;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+.post .post-title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+.post .post-meta {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.post .post-meta .dot {
+  color: #A0A0A0;
+}
+.post .post-thumbnail {
+  margin: 0 0 2rem 0;
+}
+.post .post-thumbnail img {
+  width: 100%;
+  border-radius: 12px;
+}
+.post .post-content {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text);
+}
+.post .post-content h2, .post .post-content h3, .post .post-content h4 {
+  color: var(--primary);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+.post .post-content p {
+  margin-bottom: 1.5rem;
+}
+.post .post-content a {
+  color: var(--secondary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+.post .post-content a:hover {
+  color: var(--primary);
+}
+.post .post-content ul, .post .post-content ol {
+  padding-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+.post .post-content blockquote {
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  background-color: var(--light-grey);
+  border-left: 4px solid var(--secondary);
+  font-style: italic;
+  color: var(--text-muted);
+}
+.post .post-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 2rem 0;
 }
 
 /*# sourceMappingURL=main.css.map */

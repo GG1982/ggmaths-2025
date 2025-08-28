@@ -12,9 +12,8 @@ description: "Practical maths revision strategies, study tips, and inspiration f
     </div>
 </section>
 
-<section id="blog-posts">
+<section id="blog-posts" class=".blog-posts">
     <div class="container">
-        <h2>Latest Articles</h2>
         <div class="post-grid">
             {% for post in site.posts %}
             <article class="post-card">
@@ -23,7 +22,7 @@ description: "Practical maths revision strategies, study tips, and inspiration f
                         <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
                     </a>
                 {% endif %}
-                <div class="post-content">
+                <div class="post-card-content">
                     {% if post.tags.size > 0 %}
                         <div class="post-tags">
                             {% for tag in post.tags %}
@@ -33,6 +32,7 @@ description: "Practical maths revision strategies, study tips, and inspiration f
                     {% endif %}
                     <h3 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
                     <p class="post-meta">
+                        <span class="author">By Giuliano Grasso</span>
                         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
                     </p>
                     <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
