@@ -187,6 +187,92 @@
     }
 }
 
+/* --- Habit Hero Section --- */
+#habit-hero {
+    padding: 80px 0;
+    background-color: var(--white);
+    text-align: center;
+}
+
+#habit-hero .habit-intro {
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+}
+
+#habit-hero h2 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+#habit-hero .section-subheadline {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* --- The Feature Card --- */
+.habit-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: var(--light-grey);
+    border: 2px solid var(--secondary); /* Brand Gold border to highlight USP */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.habit-card-icon {
+    flex-shrink: 0;
+}
+
+.habit-card-content h3 {
+    color: var(--primary);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.habit-card-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--dark-grey);
+    margin-bottom: 1rem;
+}
+
+.habit-card-content strong {
+    color: var(--primary);
+}
+
+.habit-tagline {
+    font-weight: 700;
+    color: var(--primary);
+    font-style: italic;
+    margin-bottom: 0 !important;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .habit-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+        margin: 0 15px;
+    }
+
+    .habit-card-icon {
+        margin-bottom: 10px;
+    }
+    
+    #habit-hero .section-subheadline {
+        font-size: 1.1rem;
+    }
+}
+
 /* Who We Help Section */
 #who-we-help {
     padding: 80px 0;
